@@ -1,55 +1,71 @@
+import Forms from "./components/forms/forms.js";
+import Table from "./components/table/table.js";
 
-import Buttoncomponent from "./components/button/button.js";
-import { Heading1,Heading2,Heading3 } from "./components/heading.js";
-   
-
-const App = () =>{
+const App = () => {
   return (
     <div>
-      <h1>hlo iam k.naveen</h1>;
-      <img src="https://media.istockphoto.com/id/517188688/photo/mountain-landscape.jpg?s=612x612&w=0&k=20&c=A63koPKaCyIwQWOTFBRWXj_PwCrR4cEoOw2S9Q7yVl8=" width={100} height={100}></img><br></br>
-      <a href="https://www.amazon.in/"><Buttoncomponent>click me </Buttoncomponent><br></br></a>
-      <Heading1></Heading1>
-      <Heading2></Heading2>
-      <Heading3></Heading3> 
-     <ul>
-        <li>hlo</li>
-        <li>srinidhi</li>
-      </ul>
-      <ol>
-        <li>
-          iam
-        </li>
-        <li>from</li>
-        <li>hyderabad</li>
-      </ol>
+      <center>
+        <form>
+          <br />
+          <label>First Name:</label>
+          <input type="text" placeholder="First Name" />
+          <br />
+          <label>Last Name:</label>
+          <input type="text" placeholder="Last Name"/>
+          <br />
+          <label>Username:</label>
+          <input type="text" placeholder="Enter username" required/>
+          <br />
+          <label>Password:</label>
+          <input type="password" placeholder="Enter password" required />
+          <br />
+          <label>Confirm Password:</label>
+          <input type="password" placeholder="Confirm Password" required />
+          <br />
+          <button>Submit</button>
+        </form>
+      </center>
+      <br />
+      <br />
+      <br />
+   
+
+    <center>
+      <table border={1}> 
+        <thead>
+          <tr>
+            <th>Id's</th>
+            <th>Name</th>
+            <th>Image</th>
+            <th>Type Of Pic</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Nature Image</td>
+            <td><img src="https://i0.wp.com/picjumbo.com/wp-content/uploads/magical-spring-forest-scenery-during-morning-breeze-free-photo.jpg?w=600&quality=80"width={200}/></td>
+            <td>Nature PHotography</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Virat Kohli</td>
+            <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfz2Qqdg5FGmRMrM1KpmlscG_ldrQMwDCTYQ&s"width={200}/></td>
+            <td>cricketer</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>INDIANARMY</td>
+            <td><img src="https://t3.ftcdn.net/jpg/06/28/11/04/360_F_628110434_LxS7d8mTO1v6T8RDumrFPMRIbyocHFiS.jpg"width={200}/></td>
+            <td>COMMANDO'S</td>
+          </tr>
+        </tbody>
+      </table>
+      </center>
     </div>
+  
   );
 };
-export default App;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+export default App; 
 
